@@ -6,5 +6,9 @@ source /Users/oliver/anaconda3/etc/profile.d/conda.sh
 # 激活環境
 conda activate mavproxy
 
+# 自動運行 docker compose
+docker-compose up -d
+
 # 接下來的命令...
 mavproxy.py --master=tcp:localhost:5760 --out 127.0.0.1:14550 --out 127.0.0.1:14551
+
